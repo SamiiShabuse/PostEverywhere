@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PostEverywhere - Upload</title>
+  </head>
+  <body>
+    <h1>PostEverywhere — Upload a Reel</h1>
+    <form id="upload-form">
+      <label>Title: <input type="text" id="title" /></label>
+      <br />
+      <label>Video: <input type="file" id="file" accept="video/*" /></label>
+      <br />
+      <fieldset>
+        <legend>Publish to</legend>
+        <label><input type="checkbox" name="platform" value="youtube" checked /> YouTube</label>
+        <label><input type="checkbox" name="platform" value="instagram" /> Instagram</label>
+        <label><input type="checkbox" name="platform" value="tiktok" /> TikTok</label>
+      </fieldset>
+      <button type="submit">Upload & Queue</button>
+    </form>
+
+    <pre id="result"></pre>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
